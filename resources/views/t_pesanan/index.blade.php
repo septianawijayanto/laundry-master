@@ -9,7 +9,7 @@
             <div class="box-header">
                 <p>
                     <button class="btn btn-sm btn-flat btn-warning btn-refresh"><i class="fa fa-refresh"></i> Refresh</button>
-                    <a href="{{ url('transaksi-pesanan/add') }}" class="btn btn-sm btn-flat btn-primary"><i class="fa fa-plus"></i> Tambah data</a>
+                    <a href="{{ url('transaksi-pesanan/add') }}" class="btn btn-sm btn-flat btn-primary"><i class="fa fa-plus"></i> Tambah Transaksi</a>
 
                     <a href="{{ url('transaksi-pesanan') }}" class="btn btn-sm btn-flat btn-warning"><i class=""></i> All</a>
                     <a href="#" class="btn btn-sm btn-flat btn-success btn-filter"><i class="fa fa-filter"></i> Filter Tanggal</a>
@@ -19,7 +19,7 @@
                 <table class="table table-hover myTable">
                     <thead>
                         <tr>
-                            <th>action</th>
+                            <th>Action</th>
                             <th>No</th>
                             <th>Nama Customer</th>
                             <th>Paket</th>
@@ -52,7 +52,7 @@
                                 <div style="width:60px">
                                     <a href="{{ url('transaksi-pesanan/naikkan-status/'.$dt->id) }}" class="btn btn-success btn-xs btn-edit" id="edit"><i class="fa fa-pencil-square-o"></i></a>
 
-                                    <a href="{{ url('transaksi-pesanan/naikkan-status-pembayaran/'.$dt->id) }}" class="btn btn-primary btn-xs btn-edit" id="edit"><i class="fa fa-pencil-square-o"></i></a>
+                                    <a href="{{ url('transaksi-pesanan/naikkan-status-pembayaran/'.$dt->id) }}" class="btn btn-primary btn-xs btn-edit" id="edit"><i class="fa fa-money"></i></a>
                                 </div>
                             </td>
                             <td>

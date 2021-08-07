@@ -18,12 +18,12 @@
                     <table class="table table-hover myTable">
                         <thead>
                             <tr>
-                                <th>action</th>
+                                <th>Action</th>
                                 <th>NO</th>
-                                <th>nama</th>
-                                <th>urutan</th>
-                                <th>created at</th>
-                                <th>update at</th>
+                                <th>Nama</th>
+                                <th>Urutan</th>
+                                <th>Created at</th>
+                                <th>Update at</th>
                             </tr>
                         </thead>
                         <tbody>

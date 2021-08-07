@@ -24,7 +24,7 @@
                         @endif
                     </div>
                     <div class="form-group {{$errors->has('urutan') ? 'has-error' :''}}">
-                        <label for="exampleInputEmail1">urutan</label>
+                        <label for="exampleInputEmail1">Urutan</label>
                         <input type="text" name="urutan" class="form-control" id="exampleInputEmail1" placeholder="urutan">
                         @if($errors->has('urutan'))
                         <span class="help-block">{{$errors->first('urutan')}}</span>

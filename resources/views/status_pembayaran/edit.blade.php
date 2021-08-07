@@ -19,14 +19,14 @@
                     <div class="box-body">
 
                         <div class="form-group {{$errors->has('nama') ? 'has-error' :''}}">
-                            <label for="exampleInputEmail1">Nama status</label>
+                            <label for="exampleInputEmail1">Nama Status</label>
                             <input type="text" name="nama" class="form-control" id="exampleInputEmail1" placeholder="" value="{{$dt->nama}}">
                             @if($errors->has('nama'))
                             <span class="help-block">{{$errors->first('nama')}}</span>
                             @endif
                         </div>
                         <div class="form-group {{$errors->has('urutan') ? 'has-error' :''}}">
-                            <label for="exampleInputEmail1">urutan</label>
+                            <label for="exampleInputEmail1">Urutan</label>
                             <input type="text" name="urutan" class="form-control" id="exampleInputEmail1" placeholder="" value="{{$dt->urutan}}">
                             @if($errors->has('urutan'))
                             <span class="help-block">{{$errors->first('urutan')}}</span>

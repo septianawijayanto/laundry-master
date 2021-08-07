@@ -1,12 +1,16 @@
 <!-- Logo -->
+
 <?php
 
+use App\Nama_usaha;
+
+$nama = Nama_usaha::first();
 ?>
 <a href="{{url('nama-usaha')}}" class="logo">
   <!-- mini logo for sidebar mini 50x50 pixels -->
   <span class="logo-mini"><b>L</b>S</span>
   <!-- logo for regular state and mobile devices -->
-  <span class="logo-lg"><b>Berkah Laundry</b></span>
+  <span class="logo-lg"><b>{{$nama->nama}}</b></span>
 </a>
 <!-- Header Navbar: style can be found in header.less -->
 <nav class="navbar navbar-static-top">

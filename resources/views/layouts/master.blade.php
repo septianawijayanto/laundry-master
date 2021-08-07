@@ -119,10 +119,16 @@
       <div class="pull-right hidden-xs">
         <!-- <b>(021)</b>7398615 -->
       </div>
+      <?php
+
+      use App\Nama_usaha;
+
+      $nama = Nama_usaha::first();
+      ?>
       <strong>
+        <br> <strong>Copyright &copy; 2021 {{$nama->nama}}<br></strong>
+
         <br>
-        Yessi Novriyani<br>
-        Telp: 0823-5112-1902 <br> e-mail: Yessinovriyani048@gmail.com
       </strong>
     </footer>
 
@@ -130,7 +136,7 @@
 
     <!-- /.control-sidebar -->
     <!-- Add the sidebar's background. This div must be placed
-       immediately after the control sidebar -->
+      immediately after the control sidebar -->
     <div class="control-sidebar-bg"></div>
   </div>
   <!-- ./wrapper -->

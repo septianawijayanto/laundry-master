@@ -10,7 +10,7 @@ class Customer_controller extends Controller
 {
     public function index()
     {
-        $title = 'Halaman customer';
+        $title = 'Halaman Customer';
         $data = Customer::orderBy('nama', 'asc')->get();
 
         return view('customer.index', compact('title', 'data'));
@@ -52,7 +52,7 @@ class Customer_controller extends Controller
     public function edit($id)
     {
         $dt = Customer::find($id);
-        $title = "edit customer $dt->nama";
+        $title = "Edit Customer $dt->nama";
 
         return view('customer.edit', compact('title', 'dt'));
     }

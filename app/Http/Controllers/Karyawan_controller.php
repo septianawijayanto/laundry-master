@@ -13,7 +13,7 @@ class Karyawan_controller extends Controller
     {
         $title = 'Master Karyawan';
 
-        $data = User::where('role', Auth::user()->role = null)->get();
+        $data = User::where('role', null)->get();
 
         return view('karyawan.index', compact('title', 'data'));
     }

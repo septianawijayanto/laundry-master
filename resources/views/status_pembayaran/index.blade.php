@@ -18,12 +18,12 @@
                     <table class="table table-hover myTable">
                         <thead>
                             <tr>
-                                <th>action</th>
-                                <th>NO</th>
-                                <th>nama</th>
+                                <th>Action</th>
+                                <th>No</th>
+                                <th>Nama</th>
                                 <th>Urutan</th>
-                                <th>created at</th>
-                                <th>update at</th>
+                                <th>Created at</th>
+                                <th>Update at</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -33,7 +33,8 @@
                                     <div style="width:60px">
                                         <a href="{{ url('status-pembayaran/'.$dt->id)}}" class="btn btn-warning btn-xs btn-edit" id="edit"><i class="fa fa-pencil-square-o"></i></a>
 
-                                        <a href="{{ url('status-pembayaran/'.$dt->id.'/delete') }}" class="btn btn-danger btn-xs btn-hapus" onclick="return confirm('Apakah Akan Anda Hapus?')"><i class="fa fa-trash-o"></i></a></div>
+                                        <a href="{{ url('status-pembayaran/'.$dt->id.'/delete') }}" class="btn btn-danger btn-xs btn-hapus" onclick="return confirm('Apakah Akan Anda Hapus?')"><i class="fa fa-trash-o"></i></a>
+                                    </div>
                                 </td>
                                 <td>{{$e+1}}</td>
                                 <td>{{$dt->nama}}</td>

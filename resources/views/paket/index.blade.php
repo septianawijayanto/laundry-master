@@ -17,7 +17,7 @@
                     <table class="table table-hover myTable">
                         <thead>
                             <tr>
-                                <th>action</th>
+                                <th>Action</th>
                                 <th>No</th>
                                 <th>Nama</th>
                                 <th>Harga</th>
@@ -32,7 +32,8 @@
                                     <div style="width:60px">
                                         <a href="{{ url('paket-laundry/'.$dt->id)}}" class="btn btn-warning btn-xs btn-edit" id="edit"><i class="fa fa-pencil-square-o"></i></a>
 
-                                        <a href="{{ url('paket-laundry/'.$dt->id.'/delete') }}" class="btn btn-danger btn-xs btn-hapus" onclick="return confirm('Apakah Akan Anda Hapus?')"><i class="fa fa-trash-o"></i></a></div>
+                                        <a href="{{ url('paket-laundry/'.$dt->id.'/delete') }}" class="btn btn-danger btn-xs btn-hapus" onclick="return confirm('Apakah Akan Anda Hapus?')"><i class="fa fa-trash-o"></i></a>
+                                    </div>
                                 </td>
                                 <td>{{$e+1}}</td>
                                 <td>{{$dt->nama}}</td>

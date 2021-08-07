@@ -19,7 +19,7 @@
                     {{ method_field ('PUT') }}
                     <div class="box-body">
                         <div class="form-group {{$errors->has('email') ? 'has-error' :''}}">
-                            <label for="exampleInputEmail1">Email address</label>
+                            <label for="exampleInputEmail1">Email Address</label>
                             <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" value="{{ $dt->email }}">
                             @if($errors->has('email'))
                             <span class="help-block">{{$errors->first('email')}}</span>
@@ -33,7 +33,7 @@
                             @endif
                         </div>
                         <div class="form-group {{$errors->has('no_hp') ? 'has-error' :''}}">
-                            <label for="exampleInputPassword1">No hp</label>
+                            <label for="exampleInputPassword1">No Hp</label>
                             <input type="number" name="no_hp" class="form-control" id="exampleInputPassword1" placeholder="No hp" value="{{ $dt->no_hp }}">
                             @if($errors->has('no_hp'))
                             <span class="help-block">{{$errors->first('no_hp')}}</span>

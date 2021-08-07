@@ -29,13 +29,18 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
 
-<body class="hold-transition login-page" style="background-image: url('{{ asset('gambar/back.jpeg')}}');">
+<body class="hold-transition login-page">
     <div class="login-box">
+        <?php
 
+        use App\Nama_usaha;
+
+        $nama = Nama_usaha::first();
+        ?>
         <!-- /.login-logo -->
         <div class="login-box-body">
             <div class="login-logo">
-                <a href="../../index2.html"><b>Berkah</b>Laundry</a>
+                <a href="../../index2.html">{{$nama->nama}}</a>
             </div>
             <p class="login-box-msg">Sign in to start your session</p>
 
